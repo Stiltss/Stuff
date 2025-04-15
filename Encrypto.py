@@ -23,7 +23,7 @@ print("Encrypted Phrase: " + token.decode('utf-8'))  # Decode the token for clea
 time.sleep(1)
 print("10 seconds before clearing text")
 time.sleep(10)
-os.system("clear")
+os.system("clr")
 
 decrypt = input("Do you wish to decrypt something?(Y/N): ").strip()
 while decrypt.upper() not in ['Y', 'N']:
@@ -43,7 +43,7 @@ if decrypt.upper() == "Y":
         print("     Decrypting. Please Hold")
         print(f"[{'█' * (i+1)}{'-' * (9-i)}]")
         time.sleep(0.5)
-        os.system("clear")
+        os.system("clr")
     print("Decrypted Text: " + resp)
     
 sys.exit(0)  # End the code
